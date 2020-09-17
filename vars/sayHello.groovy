@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
 
-def person = [name: 'Guillaume']
-assert "$person.name"
+def call(String name = 'human') {
+  echo "Hello my name is, ${name}."
+}
