@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 class Example {
    static void main(String[] args) {
       Date date = new Date(100);
