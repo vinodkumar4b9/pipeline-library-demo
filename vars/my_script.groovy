@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def my_function(String serverIp, String scriptArgument) {
     def script_content = libraryResource 'my_scripts/test.sh'
     // create a file with script_bash content
