@@ -1,5 +1,4 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
-  echo "Hello my name is, ${name}."
-}
+def person = [name: 'Guillaume', age: 36]
+assert "$person.name is $person.age years old" == 'Guillaume is 36 years old'
