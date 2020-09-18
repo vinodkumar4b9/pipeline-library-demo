@@ -6,7 +6,7 @@ pipeline {
     stage('MyStage') {
         steps {
             script {
-                doSomething.call("a")
+                my_script.my_function("192.168.1.1", "scriptArgumentValue")
             }
         }
     }
