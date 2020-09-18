@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
 
 def my_function(String serverIp, String scriptArgument) {
-    def script_content = libraryResource 'my_scripts/test.sh'
+    def script_content = libraryResource 'scripts/print-hello.sh'
     // create a file with script_bash content
-    writeFile file: './test.sh', text: script_content
-    echo "Execute remote script test.sh..."
+    writeFile file: './print-hello.sh', text: script_content
+    echo "Execute remote script print-hello.sh..."
     def sshCommand = "ssh username@${serverIp} \'bash -xs\' < ./test.sh ${scriptArgument}"
     echo "Ssh command is: ${sshCommand}"
     sh(sshCommand)
