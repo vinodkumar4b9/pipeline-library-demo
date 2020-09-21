@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'This is a test' > data.txt
+echo 'MY name is vinodkumar and I work for Deloitte' > deloitte.txt
